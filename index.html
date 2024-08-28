@@ -21,6 +21,19 @@
 </head>
 
 <body>
+    <!-- login liff-->
+    <script>
+      window.onload = function(){
+        liff.init({liffId: "2006152701-w2goZ8Rk"} , function(){
+          liff.ready.then(() => {
+            if (liff.isLoggedIn()) {
+}else{
+  liff.login();
+}
+          });
+        })
+      }
+    </script>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container"> <a class="navbar-brand navbar-logo" href="#"> <img src="images/lodo new.png" alt="logo"
